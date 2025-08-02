@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF308A9D-994C-4995-871E-DC4470EDDC3F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsoleAppBootcamp4</RootNamespace>
+    <AssemblyName>ConsoleAppBootcamp4</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1_level1\Array.cs" />
+    <Compile Include="1_level1\Check_day.cs" />
+    <Compile Include="1_level1\Compute_BMI.cs" />
+    <Compile Include="1_level1\Compute_PCT.cs" />
+    <Compile Include="1_level1\For_loop.cs" />
+    <Compile Include="1_level1\Program.cs" />
+    <Compile Include="2_level2\Calling_Function.cs" />
+    <Compile Include="2_level2\Call_Fun2.cs" />
+    <Compile Include="2_level2\MY_Function.cs" />
+    <Compile Include="3_OOP\Employee.cs" />
+    <Compile Include="3_OOP\Employee_Test.cs" />
+    <Compile Include="3_OOP\Patient.cs" />
+    <Compile Include="3_OOP\Patient_Test.cs" />
+    <Compile Include="3_OOP\Room.cs" />
+    <Compile Include="3_OOP\Student.cs" />
+    <Compile Include="3_OOP\Student_Test.cs" />
+    <Compile Include="3_OOP\Test_Room.cs" />
+    <Compile Include="4_OOP_V2\Employee.cs" />
+    <Compile Include="4_OOP_V2\EmployeeBasic.cs" />
+    <Compile Include="4_OOP_V2\EmployeeHourly.cs" />
+    <Compile Include="4_OOP_V2\IEmployee.cs" />
+    <Compile Include="4_OOP_V2\Test_Employee.cs" />
+    <Compile Include="6_ConnectDB\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="1_level1\Task1_FirstAndLastCountry.cs" />
+    <Compile Include="5_Task_OOP\Accountant.cs" />
+    <Compile Include="5_Task_OOP\Developer.cs" />
+    <Compile Include="5_Task_OOP\Employee.cs" />
+    <Compile Include="5_Task_OOP\Manager.cs" />
+    <Compile Include="5_Task_OOP\Test_EMO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
