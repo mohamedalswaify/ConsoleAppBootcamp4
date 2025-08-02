@@ -9,6 +9,7 @@ namespace ConsoleAppBootcamp4._6_ConnectDB
 {
     internal class Program
     {
+        //mohamed alswaify
         static void Main(string[] args)
         {
           //  string connection = "Server=DESKTOP-L71NKL9\\MSSQLSERVERR;Database=HR;Integrated Security=True;";
